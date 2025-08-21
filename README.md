@@ -51,7 +51,7 @@ Para rodar este projeto localmente, siga os passos abaixo.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+    git clone https://github.com/NovakBraido/Laene-Landing-Page/
     ```
 
 2.  **Navegue até a pasta do projeto:**
