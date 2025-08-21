@@ -1,0 +1,9 @@
+/* Importa as diretivas base do Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Você pode adicionar estilos globais customizados aqui se precisar */
+body {
+  font-family: 'Inter', sans-serif; /* Exemplo de fonte, certifique-se de importá-la no seu index.html se desejar */
+}
