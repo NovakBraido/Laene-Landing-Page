@@ -3,7 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Você pode adicionar estilos globais customizados aqui se precisar */
+/* Estilos globais customizados */
 body {
-  font-family: 'Inter', sans-serif; /* Exemplo de fonte, certifique-se de importá-la no seu index.html se desejar */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Esconde a barra de rolagem (se ainda precisar para outros elementos) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* --- ESTILOS PARA O CARROSSEL SWIPER --- */
+/* Muda a cor da bolinha de navegação ativa */
+.swiper-pagination-bullet-active {
+  background-color: #EC4899 !important; /* Cor rosa da sua marca (brand-pink) */
+}
+
+/* Muda a cor das bolinhas inativas */
+.swiper-pagination-bullet {
+  background-color: #9CA3AF !important; /* Cor cinza (gray-400) */
 }
