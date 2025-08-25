@@ -20,20 +20,40 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 A estrutura de pastas principal do projeto está organizada da seguinte forma:
 
 ```
-landing-page-laene/
-├── .gitignore          # Arquivos e pastas a serem ignorados pelo Git
-├── node_modules/       # Dependências do projeto (instaladas via npm)
+landing-page-laenne/
+├── .gitignore
+├── node_modules/
 ├── public/
-│   ├── index.html      # Template HTML principal da aplicação
-│   └── manifest.json   # Metadados da aplicação
+│   ├── index.html
+│   ├── laene.jpg
+│   ├── laene2.jpg
+│   └── manifest.json
 ├── src/
-│   ├── App.tsx         # Componente principal que une todas as seções
-│   ├── index.css       # Arquivo para as diretivas do Tailwind CSS
-│   └── index.tsx       # Ponto de entrada da aplicação React
-├── package.json        # Lista de dependências e scripts do projeto
-├── postcss.config.js   # Configuração do PostCSS (usado pelo Tailwind)
-├── tailwind.config.js  # Configuração principal do Tailwind CSS
-└── tsconfig.json       # Configuração do compilador TypeScript
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── CtaButton.tsx
+│   │   │   ├── Icons.tsx
+│   │   │   └── types.ts
+│   │   ├── About.tsx
+│   │   ├── CtaSection.tsx
+│   │   ├── ExitIntentModal.tsx
+│   │   ├── Faq.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Problem.tsx
+│   │   ├── Solution.tsx
+│   │   ├── Testimonials.tsx
+│   │   └── VideoSection.tsx
+│   ├── data/
+│   │   └── content.ts
+│   ├── App.tsx
+│   ├── index.css
+│   └── index.tsx
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
 ```
 
 ---
