@@ -6,10 +6,28 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-pink': '#FF0084', // A cor exata da sua médica
-        'brand-pink-light': '#FFF0F7', // Um tom bem claro para os fundos
-      }
+        'brand-pink': '#FF0084', // Sua cor personalizada (mantida)
+        'brand-pink-light': '#FFF0F7', // Seu tom claro (mantido)
+      },
+      // --- CÓDIGO ADICIONADO ABAIXO ---
+      animation: {
+        'gradient-bg': 'gradient-bg 15s ease infinite',
+      },
+      keyframes: {
+        'gradient-bg': {
+          '0%, 100%': {
+            'background-position': '0% 50%',
+          },
+          '50%': {
+            'background-position': '100% 50%',
+          },
+        },
+      },
+      // --- FIM DO CÓDIGO ADICIONADO ---
     },
   },
-  plugins: [],
+  // --- A MUDANÇA ESTÁ AQUI ---
+  plugins: [
+    require('tailwind-scrollbar'), // Adiciona o plugin da barra de rolagem
+  ],
 }

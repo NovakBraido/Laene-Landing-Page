@@ -17,13 +17,29 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-/* --- ESTILOS PARA O CARROSSEL SWIPER --- */
-/* Muda a cor da bolinha de navegação ativa */
-.swiper-pagination-bullet-active {
-  background-color: #EC4899 !important; /* Cor rosa da sua marca (brand-pink) */
+/* --- ESTILOS COMPLETOS PARA O CARROSSEL SWIPER --- */
+
+/* Estilização da Paginação (Bolinhas) */
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #d1d5db !important; /* Cinza claro */
+  opacity: 1 !important;
+  transition: background-color 0.3s ease;
 }
 
-/* Muda a cor das bolinhas inativas */
-.swiper-pagination-bullet {
-  background-color: #9CA3AF !important; /* Cor cinza (gray-400) */
+.swiper-pagination-bullet-active {
+  background-color: #FF0084 !important; /* Cor da sua marca (brand-pink) */
+}
+
+/* Estilização das Setas de Navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1f2937 !important; /* Cor cinza escuro para melhor visibilidade no fundo claro */
+  transition: transform 0.2s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }

@@ -16,9 +16,9 @@ function App() {
 
     useEffect(() => {
         const handleMouseLeave = (e: MouseEvent) => {
-            if (e.clientY <= 0) {
+            if (e.clientY <= 0 && !sessionStorage.getItem('exitIntentShown')) {
                 setIsModalOpen(true);
-                document.removeEventListener('mouseleave', handleMouseLeave);
+                sessionStorage.setItem('exitIntentShown', 'true');
             }
         };
         document.addEventListener('mouseleave', handleMouseLeave);
@@ -28,7 +28,10 @@ function App() {
     }, []);
 
     return (
-        <div className="bg-white">
+        <div 
+            className="relative z-0 bg-gradient-to-r from-pink-50 via-rose-50 to-pink-100 animate-gradient-bg" 
+            style={{ backgroundSize: '400% 400%' }}
+        >
             <ExitIntentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             <Navbar />
             <main>
