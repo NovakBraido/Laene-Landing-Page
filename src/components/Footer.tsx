@@ -4,13 +4,16 @@ import Icon from '@mdi/react';
 import { mdiWhatsapp } from '@mdi/js';
 
 const Footer: React.FC = () => (
+    // AJUSTE 1: Espaçamento vertical adaptável
     <footer className="bg-gray-800 text-gray-300">
-        <div className="container mx-auto px-6 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="container mx-auto px-6 py-12 md:py-16">
+            {/* AJUSTE 2: Espaçamento entre colunas otimizado para mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-8 text-center md:text-left">
                 <div>
                     <h3 className="text-xl font-bold text-white mb-4">Dra. Laenne Valentim</h3>
                     <p className="text-gray-400">Especialista em Autismo e TDAH</p>
-                    <p className="font-mono mt-1 text-white-100 text-xl">CRM 6751-RQE3445</p>
+                    {/* AJUSTE 3: Tamanho do CRM responsivo e cor corrigida */}
+                    <p className="font-mono mt-2 text-gray-400 text-lg md:text-xl">CRM 6751-RQE3445</p>
                 </div>
                 <div>
                     <h3 className="text-xl font-bold text-white mb-4">Navegue pelo Site</h3>

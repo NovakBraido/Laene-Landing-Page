@@ -23,8 +23,9 @@ const Testimonials: React.FC = () => {
         <section id="depoimentos" className="py-24 bg-gray-50 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que as famílias dizem</h2>
-                    <p className="text-gray-600 text-lg">
+                    {/* AJUSTE FINO: Tamanho do título e subtítulo */}
+                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">O que as famílias dizem</h2>
+                    <p className="text-gray-600 text-base md:text-lg">
                         A confiança e o resultado de quem já trilhou essa jornada comigo é minha maior recompensa.
                     </p>
                 </div>
@@ -48,7 +49,7 @@ const Testimonials: React.FC = () => {
                     {testimonialsData.map((testimonial, index) => (
                         <SwiperSlide key={index}>
                              <motion.div 
-                                className="bg-white p-8 rounded-2xl shadow-xl h-[380px] flex flex-col" // Altura fixa e display flex
+                                className="bg-white p-8 rounded-2xl shadow-xl h-[380px] flex flex-col"
                                 whileHover={{ y: -8, transition: { duration: 0.2 } }}
                             >
                                 <QuoteIcon />

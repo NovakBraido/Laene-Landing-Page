@@ -32,14 +32,41 @@ body {
   background-color: #FF0084 !important; /* Cor da sua marca (brand-pink) */
 }
 
-/* Estilização das Setas de Navegação */
+/* --- CÓDIGO CORRIGIDO E RESPONSIVO PARA AS SETAS --- */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #1f2937 !important; /* Cor cinza escuro para melhor visibilidade no fundo claro */
+  color: #1f2937 !important; /* Cor cinza escuro */
   transition: transform 0.2s ease;
+  
+  /* Tamanho padrão menor para CELULAR */
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  /* Tamanho do ÍCONE da seta para CELULAR */
+  font-size: 18px !important;
+  font-weight: 900; /* Deixa a seta mais "grossa" e visível */
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Media Query para telas maiores (a partir de 768px) */
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    /* Retorna ao tamanho normal em telas maiores */
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    /* Retorna o ÍCONE ao tamanho normal em telas maiores */
+    font-size: 24px !important;
+  }
 }
