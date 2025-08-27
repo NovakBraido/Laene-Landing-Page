@@ -19,7 +19,7 @@ const Solution: React.FC = () => (
                         <CheckCircle className="text-brand-pink w-10 h-10 md:w-12 md:h-12 flex-shrink-0" />
                         <h3 className="font-bold text-xl md:text-2xl text-gray-800">Diagnóstico Preciso</h3>
                     </div>
-                    <p className="text-gray-600 text-center md:text-left">Utilizo protocolos e avaliações reconhecidas para um diagnóstico diferencial e assertivo de Transtorno do Espectro Autista (TEA) e TDAH.</p>
+                    <p className="text-black-600 text-center md:text-left">Utilizo protocolos e avaliações reconhecidas para um diagnóstico diferencial e assertivo de Transtorno do Espectro Autista (TEA) e TDAH.</p>
                 </div>
 
                 {/* Card 2 */}
@@ -28,7 +28,7 @@ const Solution: React.FC = () => (
                         <CheckCircle className="text-brand-pink w-10 h-10 md:w-12 md:h-12 flex-shrink-0" />
                         <h3 className="font-bold text-xl md:text-2xl text-gray-800">Plano Terapêutico Singular</h3>
                     </div>
-                    <p className="text-gray-600 text-center md:text-left">Desenvolvo um plano de tratamento personalizado, considerando as necessidades únicas da criança e o contexto familiar, com acompanhamento contínuo.</p>
+                    <p className="text-black-600 text-center md:text-left">Desenvolvo um plano de tratamento personalizado, considerando as necessidades únicas da criança e o contexto familiar, com acompanhamento contínuo.</p>
                 </div>
 
                 {/* Card 3 */}
@@ -37,7 +37,7 @@ const Solution: React.FC = () => (
                         <CheckCircle className="text-brand-pink w-10 h-10 md:w-12 md:h-12 flex-shrink-0" />
                         <h3 className="font-bold text-xl md:text-2xl text-gray-800">Tratamento com Cannabis Medicinal</h3>
                     </div>
-                    <p className="text-gray-600 text-center md:text-left">Como prescritora certificada, avalio a indicação da Cannabis medicinal como uma opção terapêutica segura e eficaz para o manejo de sintomas associados.</p>
+                    <p className="text-black-600 text-center md:text-left">Como prescritora certificada, avalio a indicação da Cannabis medicinal como uma opção terapêutica segura e eficaz para o manejo de sintomas associados.</p>
                 </div>
 
             </div>

@@ -17,16 +17,9 @@ const About: React.FC = () => (
                 <div className="md:w-2/3">
                     {/* O título e os parágrafos também já estavam bem configurados */}
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center md:text-left">Conheça a Dra. Laenne Valentim</h2>
-                    <p className="text-gray-600 mb-4 text-lg text-center md:text-left">
+                    <p className="text-black-600 mb-4 text-lg text-center md:text-left">
                         Sou Médica de Família e Comunidade, com dedicação e foco no diagnóstico e tratamento do Autismo e TDAH. Minha paixão é poder transformar vidas, oferecendo não apenas meu conhecimento técnico, mas também um ombro amigo e um porto seguro para as famílias que acompanho.
                     </p>
-                    <p className="text-gray-600 mb-4 text-lg text-center md:text-left">
-                        Acredito em uma medicina que olha para o paciente de forma integral.
-                    </p>
-                    <p className="text-gray-600 mb-8 text-lg text-center md:text-left">
-                        Por isso, busco constantemente atualizações e novas abordagens terapêuticas, como a Cannabis medicinal, para oferecer o que há de mais moderno e eficaz, sempre com segurança e responsabilidade.
-                    </p>
-                    
                     {/* AJUSTE 2: Alinhamento dos cards de destaque */}
                     <div className="flex flex-col lg:flex-row gap-6">
                         <div className="flex-1 bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border">

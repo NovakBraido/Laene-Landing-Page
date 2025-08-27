@@ -27,7 +27,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
                 }`}
             >
                 {/* AJUSTE 4: Tamanho e espaçamento da resposta otimizados */}
-                <p className="text-gray-600 pb-6 pr-4 md:pr-10 text-base md:text-lg leading-relaxed">{answer}</p>
+                <p className="text-black-600 pb-6 pr-4 md:pr-10 text-base md:text-lg leading-relaxed">{answer}</p>
             </div>
         </div>
     );
@@ -41,7 +41,7 @@ const Faq: React.FC = () => {
                 <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                     {/* AJUSTE 2: Tamanhos dos textos do cabeçalho responsivos */}
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Dúvidas Frequentes</h2>
-                    <p className="text-gray-600 text-base md:text-lg">
+                    <p className="text-black-600 text-base md:text-lg">
                         Esclareça alguns pontos importantes antes de agendar sua consulta.
                     </p>
                 </div>

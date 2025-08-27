@@ -7,7 +7,7 @@ const VideoSection: React.FC = () => (
             <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                 {/* AJUSTE 2: Tamanhos dos textos responsivos */}
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">Uma Mensagem para as Famílias</h2>
-                <p className="text-gray-600 text-base md:text-lg">
+                <p className="text-black-600 text-base md:text-lg">
                     Assista a este vídeo para entender melhor minha abordagem e como posso ajudar sua família nesta jornada.
                 </p>
             </div>
