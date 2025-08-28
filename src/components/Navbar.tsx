@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Ícones (sem alterações)
 const MenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
         <line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="18" x2="21" y2="18" />
@@ -16,6 +15,18 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMenuOpen]);
+
     const handleScrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -27,7 +38,6 @@ const Navbar: React.FC = () => {
         <header className="bg-white/75 backdrop-blur-md sticky top-0 z-40 shadow-sm border-b border-gray-200/80 relative">
             <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                 
-                {/* HIERARQUIA: Cor do logo alterada para não competir com o CTA. Efeito hover sutil para a cor da marca. */}
                 <div 
                     onClick={handleScrollToTop} 
                     className="text-2xl font-extrabold text-gray-800 tracking-tight hover:text-brand-pink transition-colors duration-300 cursor-pointer"
@@ -35,7 +45,6 @@ const Navbar: React.FC = () => {
                     Dra. Laenne Valentim
                 </div>
 
-                {/* MINIMALISMO: Aumentado o espaçamento para um visual mais "aerado". */}
                 <nav className="hidden lg:flex items-center space-x-10 font-medium">
                     <AnimatedNavLink href="#servicos">Serviços</AnimatedNavLink>
                     <AnimatedNavLink href="#sobre">Sobre Mim</AnimatedNavLink>
@@ -43,7 +52,6 @@ const Navbar: React.FC = () => {
                     <AnimatedNavLink href="#faq">Dúvidas</AnimatedNavLink>
                 </nav>
 
-                {/* DESTAQUE: O botão CTA agora é o principal ponto de cor, se destacando naturalmente. */}
                 <motion.a
                     href="https://linktr.ee/dralaennevalentim"
                     target="_blank"
@@ -71,7 +79,6 @@ const Navbar: React.FC = () => {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
                     >
-                        {/* HIERARQUIA: Cores dos links do menu mobile também foram suavizadas. */}
                         <nav className="flex flex-col items-center space-y-6 py-8">
                             <a href="#servicos" onClick={() => setIsMenuOpen(false)} className="text-lg text-gray-600 hover:text-brand-pink font-medium transition-colors">Serviços</a>
                             <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="text-lg text-gray-600 hover:text-brand-pink font-medium transition-colors">Sobre Mim</a>
@@ -93,7 +100,6 @@ const Navbar: React.FC = () => {
     );
 };
 
-// EFEITOS SUTIS: Cor do texto suavizada e efeito hover mais elegante.
 const AnimatedNavLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
     return (
         <motion.div 
@@ -106,7 +112,7 @@ const AnimatedNavLink = ({ href, children }: { href: string, children: React.Rea
             <motion.div
                 className="absolute bottom-[-5px] left-0 right-0 h-[2px] bg-brand-pink"
                 initial={{ scaleX: 0 }}
-                variants={{ hover: { scaleX: 1, originX: 0.5 } }} // Garante que a linha cresça do centro
+                variants={{ hover: { scaleX: 1, originX: 0.5 } }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
             />
         </motion.div>

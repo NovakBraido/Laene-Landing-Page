@@ -12,16 +12,25 @@ const Footer: React.FC = () => (
                     <p className="text-gray-400">Especialista em Autismo e TDAH</p>
                     <p className="font-mono mt-2 text-gray-400 text-lg md:text-xl">CRM 6751-RQE3445</p>
                 </div>
+
+                <div>
+                    <h3 className="text-xl font-bold text-white mb-4">Navegue pelo Site</h3>
+                    <ul className="space-y-2">
+                        <li><a href="#servicos" className="text-gray-200 hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#sobre" className="text-gray-200 hover:text-white transition-colors">Sobre Mim</a></li>
+                        <li><a href="#depoimentos" className="text-gray-200 hover:text-white transition-colors">Depoimentos</a></li>
+                        <li><a href="#faq" className="text-gray-200 hover:text-white transition-colors">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
                 <div>
                     <h3 className="text-xl font-bold text-white mb-4">Entre em Contato</h3>
                     <p className="text-gray-400 mb-4">Siga-me nas redes sociais e envie uma mensagem para agendar sua consulta.</p>
-                    {/* A MUDANÇA ESTÁ NESTA LINHA: Adicionado "items-center" */}
                     <div className="flex justify-center md:justify-start space-x-4 items-center">
                         <a href="https://www.instagram.com/dra.laennevalentim" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-transform transform hover:scale-110">
                             <InstagramIcon className="w-7 h-7" />
                         </a>
                         <a href="https://wa.me/69993009618" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-transform transform hover:scale-110">
-                            {/* Polimento Extra: Ajustado o tamanho para melhor consistência visual */}
                             <Icon path={mdiWhatsapp} size={1.2} /> 
                         </a>
                     </div>

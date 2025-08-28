@@ -12,7 +12,6 @@ import { testimonialsData } from '../data/content';
 
 const Testimonials: React.FC = () => {
     return (
-        // FUNDO: Trocado para branco
         <section id="depoimentos" className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -41,14 +40,13 @@ const Testimonials: React.FC = () => {
                     {testimonialsData.map((testimonial, index) => (
                         <SwiperSlide key={index}>
                              <motion.div 
-                                // CARD: Fundo alterado para cinza claro para contrastar com o fundo branco
-                                className="bg-slate-50 p-8 rounded-2xl shadow-lg h-full flex flex-col border border-gray-100"
+                                className="bg-slate-50 p-6 md:p-8 rounded-2xl shadow-lg h-full flex flex-col border border-gray-100"
                                 whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
                                 transition={{ duration: 0.3 }}
                             >
                                 <div className="flex-grow">
-                                    <span className="text-7xl font-serif text-brand-pink opacity-20 absolute top-4 left-6">“</span>
-                                    <p className="text-gray-700 text-lg leading-relaxed italic pt-8">
+                                    <span className="text-7xl font-serif text-brand-pink opacity-20 absolute top-4 left-4 sm:top-6 sm:left-6">“</span>
+                                    <p className="text-gray-700 text-base md:text-lg leading-relaxed italic pt-8">
                                         {testimonial.quote}
                                     </p>
                                 </div>
